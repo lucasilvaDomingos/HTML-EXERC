@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Metal+Mania&family=Oswald:wght@200..700&display=swap');
+@font-face{
+    font-family:'idroid' ;
+    src: url('../desafio 10/recursos/fontes/idroid.otf')format('opentype')
+}
+
+body{
+    margin: auto;
+    background-color: #84E1AD;
+}
+header{
+    background-image: linear-gradient(to bottom, #3BD57F, #155932);
+    height: 200px;
+}
+#h1-main{
+    font-family: 'idroid';
+    color: #21623F;
+    text-align: center;
+    display: inline;
+}
+.h2-main{
+    font-family: 'idroid';
+    color: #21623F;
+    background-image: linear-gradient(to right,#C5ECD6 10% ,#c5ecd600);
+    padding: 0em 0em 0em 0.5em;
+}
+
+nav{
+    margin-top: 35px;
+}
+nav > a{
+    margin: 15px;
+    padding: 5px;
+    border-radius: 8px;
+    list-style-type: none;
+    text-decoration: none;
+    background-color:#43cf80 ;
+    box-shadow: inset 0px 0px 3px 2px #023619;
+    font-family:'Oswald';
+    color: rgb(1, 57, 2);
+    font-weight: 500;
+    font-size: 1.1em;
+}
+nav > a:hover{
+    background-color:#C5ECD6 ;
+    box-shadow: inset 0px 0px 3px 2px #023619;
+    padding: 5px;
+    border-radius: 8px;
+}
+nav::selection{
+     background: none;
+}
+#div-main{
+    text-align: justify;
+    background-color: white;
+    margin: auto;
+    min-width: 320px;
+    max-width: 800px;
+    padding: 20px;
+}
+#main-section{
+    margin: auto;
+}
+.oswald-black{
+    font-family:'Oswald';
+    color: rgb(0, 0, 0);
+    text-indent: 2em;
+    font-weight: 420;
+    line-height: 1.7em
+}
+.center{
+    font-family:'Oswald';
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 400;
+    text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.429);
+}
+#h1-inline.center{
+    text-align: center;
+    display: block;
+    font-family:'Oswald';
+    color: white;
+    margin-top: 0px;
+    font-size: 2.2em;
+    font-weight: 400;
+    padding-block-start: 23px;
+    text-shadow:3px 2px 2px rgba(0, 0, 0, 0.474);
+}
+#texto-de-apoio{
+    text-align: center;
+    font-family:'Oswald';
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    word-spacing: 0.5em;
+}
+#div-list{
+    background-color: #cbfce0;
+    border-radius: 1em;
+}    
+#tittle-footer{
+    font-family:'Oswald';
+    color: white;
+    font-weight: 420;
+    background-color:#47c67e ;
+    font-size: 1.2em;
+    padding: 0.3em 0.8em;
+    margin: 0px;
+    border-radius: 0.5em 0.5em 0em 0em;
+}
+#lista-não-ordenada{
+    font-family:'Oswald';
+    color: rgb(0, 0, 0);
+    text-indent: 2em;
+    font-weight: 420;
+}
+.espaçamento{
+    font-family:'Oswald';
+    color: rgb(0, 0, 0);
+    text-indent: 2em;
+    font-weight: 420;
+    margin: 1em;
+}
+.espaçamento-variado{
+    font-family:'Oswald';
+    color: rgb(0, 0, 0);
+    text-indent: 2em;
+    font-weight: 420;
+    margin: 1em;
+    padding: 0px 0px 32px 0px;
+}
+.largura-max{
+    width: 100%;
+}
+#imagem-pq{
+    display: block;
+    margin: auto;
+    width: 50%; 
+}
+ol{
+    columns: 2;
+}

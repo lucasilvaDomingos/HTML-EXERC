@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentários Gerais</title>
+</head>
+<body>
+    <h1>Inicio</h1>
+    <h2>Organização dos códigos na criação de uma página</h2>
+    <p>É importante evitar usar uma tag várias vezes, se der é legal trocar por div, porque ai você não precisa sempre criar uma class em toda tag, assim você pode modificar ela sozinha e depois especificar algo com uma class, porque se você tiver 5 "aside" não vai ter como você modificar apenas a tag aside, porque cada tag vai precisar de definições diferentes
+        <br>
+    Por isso não é tão bom fazer igual eu fiz no exerc.10 em que eu separei vários asides e não coloquei o contéudo todo como um artigo só, um artigo é um assunto específico onde esta sendo comentado, então você vai mudar a tag article quando o assunto for outro mesmo, e com o aside é a mesma coisa, a não ser que realmente tenha várias camadas do mesmo assunto, se não põe tudo em um lugar só e separa depois com divs e class
+    </p>
+    <h2>imagens/picture</h2>
+    <p>importante na hora de mudar uma imagem, é lembrar que o display dela não é block, então se você quiser mudar a posição dela teria que mudar o dispaly</p>
+    <h2>pais e filhos</h2>
+    <p>Ao invés de criar uma class pra cada h1 diferente, você pode colocar o h1 como filho da tag em que ele está, tipo main ou header, porque assim não afeta diretamente a tag pai e dimiui a quantidade de class no html
+        <br>
+    <p>Importante tmb é que se você coloca uma tag filho acima de outra tag dele, ele vai se considerar acima dela, tipo se um "main" pai colocar um "p" e no meio deles tiver um article, o article vai ser meio que inferior ao p, no caso o p vai ter maior hierarquia. Nesse cao você precisa tirar o sinal de > e deixar apenas espaço</p>
+    </p>
+    <h2>min e max</h2>
+    <p>Dá pra usar eles pra aumentar o tamnh do bloco ja definindo por exemplo que a caixa vai ter no "min" 50px de height</p>
+    <h2>margin/padding/border</h2>
+    <p>Se você quiser aumentar a margem de uma caixa dentro de outra caixa,você pode colocar negativo nos números, porque sem o negativo não ocupa o espaço total da caixa principal</p>
+</body>
+</html>
