@@ -4,8 +4,8 @@ body{
   background-image:radial-gradient(ellipse, #ff800059 30%, #ff000034,#290303b1 80%), url('../desafio-1/imagens/trono.jpg');
   background-color: #500404;
   background-repeat: no-repeat;
-  background-size: 138em;
-  background-position: center;
+  background-size: cover;
+  background-position: center center;
 }
 h1 {
   font-family: "Metal Mania";
