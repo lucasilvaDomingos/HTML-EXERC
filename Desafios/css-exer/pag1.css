@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Metal+Mania&display=swap');
 body{
   background-image:radial-gradient(ellipse, #ff800059 30%, #ff000034,#290303b1 80%), url('../desafio-1/imagens/trono.jpg');
+  /*a cada valor diferente se coloca um virgula para separar, primeiro vem a fomra do gradiente, depois as cores com as porcentagens no final delas e ai sim a virgula, e se quiser dá pra por uma imagem no final*/
   background-color: #500404;
   background-repeat: no-repeat;
   background-size: cover;
