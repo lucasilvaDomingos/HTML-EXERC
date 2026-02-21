@@ -24,6 +24,8 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     list-style: inside circle;
     padding: 0px 0px 0px 18px;
+    font-size: 1.3em;
+    line-height: 1.3em;
 }
 .css-main{
     color:#2f1359 ;
@@ -67,6 +69,8 @@ h3{
 }
 .list-css{
     padding: 0px 0px 0px 18px;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     list-style: inside circle;
+    font-size: 1.3em;
+    line-height: 1.3em;
 }
