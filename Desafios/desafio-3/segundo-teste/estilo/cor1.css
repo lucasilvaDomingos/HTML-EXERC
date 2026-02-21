@@ -1,0 +1,68 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Metal+Mania&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fascinate&family=Metal+Mania&family=Oswald:wght@200..700&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+body{
+    height: 100vh;
+    margin: 0px;
+}
+header{
+    background-color: #000000;
+    padding: 4em 0em;
+}
+header h1{
+    font-family:'Passion One',sans-serif;
+    font-size: 3.5em;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin: 0px;
+}
+nav{
+    font-family:'Passion One',sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+}
+a{
+    font-family:'Passion One',sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    font-style: bold;
+    text-align: center;
+}
+article p{
+    font-family: 'Sriracha',sans-serif;
+    font-size: 2em;
+    color: #000000;
+    padding-left: 1em;
+    margin-top: 2em;
+    margin-bottom: 3em;
+    font-size: 3vw;
+}
+div{
+    background-color: #808080;
+    padding: 1em 0em 1em 1em;
+    box-shadow: inset 0px 4px 12px 0px rgb(34, 34, 34);
+}
+div p{
+
+    background-color: #00000042;
+    width: 12em;
+    margin: 0px;
+    padding-bottom: 2em;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px black;
+}
+#flor{
+    background-image: url("../imagens/background001.jpg");
+    background-attachment: fixed;
+    background-position: right center;
+}
+#jornal{
+     background-image: url("../imagens/background002.jpg");
+     background-attachment: fixed;
+}
+
