@@ -1,10 +1,20 @@
 @charset "UTF-8";
 table{
-    width: 400px;/* é importante mudar o tamanho da tabela pelo table, porque mudar o padding pelo td não altera o real valor da célula, e sim o espaço interno */
-    height: 400px;
+    width: 20em;/* é importante mudar o tamanho da tabela pelo table, porque mudar o padding pelo td não altera o real valor da célula, e sim o espaço interno */
+    height: 1em;
+    border-collapse: collapse;
 }
-td{
-    border: 2px solid black;
-    padding: 8px;
-    vertical-align: bottom;
+td,th{
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+thead,tfoot{
+    background-color: grey;
+}
+.teste{
+    text-align: right;
+}
+#medida-da-coluna-população{
+    width: 5em;
 }
