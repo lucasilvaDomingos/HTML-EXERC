@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body{
-    height: 150vh;
+    height: 200vh;
 }
 table{
     width: 25em;/* é importante mudar o tamanho da tabela pelo table, porque mudar o padding pelo td não altera o real valor da célula, e sim o espaço interno */
@@ -23,8 +23,9 @@ tbody > tr:nth-child(odd){
     background-color: burlywood;
 }
 thead >tr>th{
+    /* o top serve pra definir onde a função de grudar vai começar, no nvagador fica com um espaço faltando então por isso que ta negativo o valor, e é preciso adicionar as propriedades do fundo porque elas não vão junto com as letras */
     position: sticky;
-    top: -1;
+    top: -1px;
     background-color: grey;
     border: 1px solid black;
     border-bottom: 0px;
