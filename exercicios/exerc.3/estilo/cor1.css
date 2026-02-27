@@ -1,13 +1,34 @@
 @charset "UTF-8";
-table{
-    width: 20em;/* é importante mudar o tamanho da tabela pelo table, porque mudar o padding pelo td não altera o real valor da célula, e sim o espaço interno */
-    height: 1em;
-    border-collapse: collapse;
+body{
+    height: 150vh;
 }
-td,th{
+table{
+    width: 25em;/* é importante mudar o tamanho da tabela pelo table, porque mudar o padding pelo td não altera o real valor da célula, e sim o espaço interno */
+    height: 1em;
+    border-collapse: collapse; 
+    position: relative;
+}
+caption,td,th{
     border: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
+}
+caption{
+    border-bottom: 0px;
+    background-color: grey;
+    font-size: 1.3em;
+
+}
+tbody > tr:nth-child(odd){
+    background-color: burlywood;
+}
+thead >tr>th{
+    position: sticky;
+    top: -1;
+    background-color: grey;
+    border: 1px solid black;
+    border-bottom: 0px;
+
 }
 thead,tfoot{
     background-color: grey;
@@ -16,5 +37,5 @@ thead,tfoot{
     text-align: right;
 }
 #medida-da-coluna-população{
-    width: 5em;
+    width: 8em;
 }
