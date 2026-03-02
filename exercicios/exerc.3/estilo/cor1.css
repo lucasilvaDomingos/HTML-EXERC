@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body{
-    height: 200vh;
+    height: 400vh;
 }
 table{
     width: 25em;/* é importante mudar o tamanho da tabela pelo table, porque mudar o padding pelo td não altera o real valor da célula, e sim o espaço interno */
@@ -39,4 +39,21 @@ thead,tfoot{
 }
 #medida-da-coluna-população{
     width: 8em;
+}
+.um{
+    text-align: center;
+    border-collapse: separate;
+}
+.um tr:nth-child(1n){
+    background-color: white;
+}
+#table-teste{
+    text-align: center;
+    width: 40em;
+    height: 10em;
+    border-collapse: collapse; 
+    position: relative;
+}
+#table-teste tr:nth-child(1n){
+    background-color: white;
 }

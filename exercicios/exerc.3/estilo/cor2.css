@@ -1,0 +1,32 @@
+@charset "UTF-8";
+body{
+    height: 200vh;
+}
+table{
+    border-collapse: collapse;
+    width:50em;
+}
+.cinza-th{
+    background-color: rgb(114, 114, 114);
+    color: aliceblue;
+}
+td,th{
+    border: 1px solid #000000;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    color: #302306;
+} 
+caption{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    background-color: rgb(208, 177, 104);
+}
+tbody{
+    text-align: center;
+}
+.fundo{
+    background-color: #f6fadc;
+}
+div{
+    overflow-x: auto;
+}

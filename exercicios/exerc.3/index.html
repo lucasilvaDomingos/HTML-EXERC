@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="estilo/cor1.css">
 </head>
 <body>
-    <table>
+    <table class="um">
         <tr>
             <td>A1</td>
             <td>B1</td>
@@ -32,7 +32,7 @@
     <br>
     <br>
     <br>
-       <table>
+       <table class="um">
         <tr>
             <td colspan="3">A1</td>
 
@@ -105,6 +105,116 @@
                     <td class="teste"><strong>11273</strong></td>
                 </tr>
         </tfoot>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table class="um">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table class="um">
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <br>
+    <table id="table-teste">
+        <thead>
+            <tr>
+                <th scope="col">GRUPO</th>
+                <th scope="col">NOME</th>
+                <th scope="colgroup" colspan="4">FILMES</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">MULHERES</th>
+                <td colspan="2">Ana Clara</td>
+                <td>Filme1</td>
+                <td>Filme2</td>
+                <td>Filme3</td>
+            </tr>
+            <tr>
+                <td colspan="2">Julia Galvão</td>
+                <td>Filme1</td>
+                <td>Filme2</td>
+                <td>Filme3</td>
+            </tr>
+            <tr>
+                <td colspan="2">Bea Triz</td>
+                <td>Filme1</td>
+                <td>Filme2</td>
+                <td>Filme3</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">HOMENS</th>
+                <td colspan="2">João Pedro</td>
+                <td>Filme1</td>
+                <td>Filme2</td>
+                <td>Filme3</td>
+            </tr>
+            <tr>
+                <td colspan="2">Leo Nardo</td>
+                <td>Filme1</td>
+                <td>Filme2</td>
+                <td>Filme3</td>
+            </tr>
+            <tr>
+                <td colspan="2">Paulo Verdante</td>
+                <td>Filme1</td>
+                <td>Filme2</td>
+                <td>Filme3</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
