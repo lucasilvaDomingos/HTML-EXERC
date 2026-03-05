@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* Normalmente para dar responsividade ao position se usa % ou vw vh */
+#bloco{
+    position: relative;
+    height: 30vh;
+    width: 30vw;
+    top: 20em;
+    left: 20em;
+    background-color: brown;
+}
