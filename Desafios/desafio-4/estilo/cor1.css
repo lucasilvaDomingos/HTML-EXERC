@@ -1,0 +1,33 @@
+@charset "UTF-8";
+body{
+    background-image: url(../recursos/pacote-d013/imagens/fundo-madeira.jpg);
+    background-color: darkgray;
+    background-size: 100vh;
+    background-repeat: no-repeat;
+}
+div  img{
+    display: block;
+    background-color: black;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+}
+#celular{
+    position: relative;
+    background-image: url(../recursos/pacote-d013/imagens/frame-iphone.png);
+    background-repeat: no-repeat;
+    margin: auto;
+    display: block;
+    height: 39em;
+    width: 19em;
+}
+
+iframe{
+    position: absolute;
+    height: 474px;
+    width: 270px;
+    top: 4.9em;
+    left: 1.3em;
+    overflow: hidden;
+}
+  
