@@ -1,33 +1,49 @@
 @charset "UTF-8";
-body{
-    background-image: url(../recursos/pacote-d013/imagens/fundo-madeira.jpg);
-    background-color: darkgray;
-    background-size: 100vh;
-    background-repeat: no-repeat;
+*/* seletor universal, ja defini 0 para os dois para não ficar bordas na tela */{
+    padding: 0px;
+    margin: 0px;
 }
-div  img{
-    display: block;
+html body/* é importante para que ocupe toda a tela para esse desafio */{
+    height: 100vh;
+    width: 100vw;
     background-color: black;
-    height: 3em;
-    width: 3em;
-    border-radius: 50%;
+}
+body{
+    height: 100vh;/* aqui vai servir para sobrepor o preto da tela pelo azul */
+    background:aqua url(../recursos/pacote-d013/imagens/fundo-madeira.jpg) top center no-repeat;
+    background-size:cover ;
+}
+main{
+    position: relative;
+    height: 100vh;
 }
 #celular{
-    position: relative;
-    background-image: url(../recursos/pacote-d013/imagens/frame-iphone.png);
-    background-repeat: no-repeat;
-    margin: auto;
-    display: block;
-    height: 39em;
-    width: 19em;
-}
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    width: 311px;
+    height: 627px;
+    background: url(../recursos/pacote-d013/imagens/frame-iphone.png) center center no-repeat;
 
+}
 iframe{
     position: absolute;
-    height: 474px;
-    width: 270px;
-    top: 4.9em;
-    left: 1.3em;
-    overflow: hidden;
+    top: 80px;
+    left:23px;
+    height:471px ;
+    width:266px ;
 }
-  
+#espaço-das-redes{
+    padding-top: 3em;
+    text-align: right;/* ja que as imagens não são texto então teve que por o text-align na section para mover */
+}
+#espaço-das-redes img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+
+
