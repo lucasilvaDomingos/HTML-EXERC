@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulários</title>
+</head>
+<body>
+    <form action="exemplo.php" method="get">
+        <p><strong><label for="Nome">Nome:</label><input type="text" name="Nome" id="Nome"></strong></p>
+        <p><input type="submit" value="Confirmar"></p>
+    </form>
+    <form action="exemplo.php" method="post" autocomplete="on">
+        <br>
+        <div>
+            <label for="iNome"><strong>Nome:</strong></label>
+        </div><input type="text" name="Nome" id="iNome" required placeholder="Nome" minlength="3" maxlength="15" >
+        <br>
+        <div>
+            <label for="Email"><strong>Email:</strong></label>
+        </div><input type="email" name="Email" id="Email" required placeholder="@gmail.com" minlength="15" maxlength="30" >
+        <br>
+        <div>
+            <label for="Senha"><strong>Senha:</strong></label>
+        </div><input type="password" name="Senha" id="Senha" required placeholder="*****" minlength="8" maxlength="20" >
+        <br>
+        <div>
+            <strong><label for="Data">Data:</label></strong>
+        </div><input type="date" name="Data">
+        <br>
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>
