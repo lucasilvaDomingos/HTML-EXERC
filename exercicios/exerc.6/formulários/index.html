@@ -11,24 +11,32 @@
         <p><input type="submit" value="Confirmar"></p>
     </form>
     <form action="exemplo.php" method="post" autocomplete="on">
-        <br>
-        <div>
-            <label for="iNome"><strong>Nome:</strong></label>
-        </div><input type="text" name="Nome" id="iNome" required placeholder="Nome" minlength="3" maxlength="15" >
-        <br>
-        <div>
-            <label for="Email"><strong>Email:</strong></label>
-        </div><input type="email" name="Email" id="Email" required placeholder="@gmail.com" minlength="15" maxlength="30" >
-        <br>
-        <div>
-            <label for="Senha"><strong>Senha:</strong></label>
-        </div><input type="password" name="Senha" id="Senha" required placeholder="*****" minlength="8" maxlength="20" >
-        <br>
-        <div>
-            <strong><label for="Data">Data:</label></strong>
-        </div><input type="date" name="Data">
-        <br>
-        <input type="submit" value="Confirmar">
+        <fieldset>
+            <legend>Teste de formulário</legend>
+            <br>
+            <div>
+                <label for="iNome"><strong>Nome:</strong></label>
+            </div><input type="text" name="Nome" id="iNome" required placeholder="Nome" minlength="3" maxlength="15" autocomplete="name" >
+            <br>
+            <div>
+                <label for="Email"><strong>Email:</strong></label>
+            </div><input type="email" name="Email" id="Email" required placeholder="@gmail.com" minlength="15" maxlength="30" autocomplete="email" 
+            <br>
+            <div>
+                <label for=""><strong>Telefone:</strong></label>
+            </div>
+            <input type="tel" name="Tel" id="iTel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            <br>
+            <div>
+                <label for="Senha"><strong>Senha:</strong></label>
+            </div><input type="password" name="Senha" id="Senha" required placeholder="*****" minlength="8" maxlength="20" autocomplete="current-password">
+            <br>
+            <div>
+                <strong><label for="Data">Data:</label></strong>
+            </div><input type="date" name="Data">
+            <br>
+            <input type="submit" value="Confirmar">
+        </fieldset>
     </form>
 </body>
 </html>
