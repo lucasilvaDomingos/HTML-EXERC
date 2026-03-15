@@ -16,26 +16,92 @@
             <br>
             <div>
                 <label for="iNome"><strong>Nome:</strong></label>
-            </div><input type="text" name="Nome" id="iNome" required placeholder="Nome" minlength="3" maxlength="15" autocomplete="name" >
+            <input type="text" name="Nome" id="iNome" required placeholder="Nome" minlength="3" maxlength="15" autocomplete="name" >
+            </div>
             <br>
             <div>
                 <label for="Email"><strong>Email:</strong></label>
-            </div><input type="email" name="Email" id="Email" required placeholder="@gmail.com" minlength="15" maxlength="30" autocomplete="email" 
+            <input type="email" name="Email" id="Email" required placeholder="@gmail.com" minlength="15" maxlength="30" autocomplete="email">
+            </div> 
             <br>
             <div>
                 <label for=""><strong>Telefone:</strong></label>
+                <input type="tel" name="Tel" id="iTel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
             </div>
-            <input type="tel" name="Tel" id="iTel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
             <br>
             <div>
                 <label for="Senha"><strong>Senha:</strong></label>
-            </div><input type="password" name="Senha" id="Senha" required placeholder="*****" minlength="8" maxlength="20" autocomplete="current-password">
+                <input type="password" name="Senha" id="Senha" required placeholder="*****" minlength="8" maxlength="20" autocomplete="current-password">
+            </div>
             <br>
             <div>
                 <strong><label for="Data">Data:</label></strong>
-            </div><input type="date" name="Data">
+                <input type="date" name="Data">
+            </div>
             <br>
+        </fieldset>
+        <br>
+        <div>
             <input type="submit" value="Confirmar">
+            <input type="reset" value="Apagar">
+        </div>
+    </form>
+    <br>
+    <form action="">
+        <fieldset>
+            <legend>Dados sobre Video Game</legend>
+            <fieldset>
+                <legend>Seus jogos Favoritos</legend>
+                <div id="marcação">
+                    <input type="checkbox" name="Hades" id="Hades"><label for="Hades">Hades</label>
+                    <br>
+                    <input type="checkbox" name="Outer wilds" id="Outer Wilds"><label for="Outer Wilds">Outer Wilds</label>
+                    <br>
+                    <input type="checkbox" name="Mario Kart" id="Mario Kart"><label for="Mario Kart">Mario Kart</label>
+                    <br>
+                    <input type="checkbox" name="Minecraft" id="Minecraft"><label for="Minecraft">Minecraft</label>
+                    <br>
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Seu Gênero de jogos Favorito</legend>
+                <div><!-- é preciso por o mesmo 'name' nos radios porque se não vai dar pra marcar mais de uma opção -->
+                    <input type="radio" name="único" id="rogue">
+                    <label for="rogue">Rogue Like</label>
+                    <br>
+                    <input type="radio" name="único" id="indie">
+                    <label for="indie">Indie</label>
+                    <br>
+                    <input type="radio" name="único" id="aventura">
+                    <label for="aventura">Aventura</label>
+                    <br>
+                    <input type="radio" name="único" id="puzzel">
+                    <label for="puzzel">Puzzel</label>
+                    <br>
+                    <input type="radio" name="único" id="fps">
+                    <label for="fps">FPS</label>
+                    <br>
+                    <input type="radio" name="único" id="ação">
+                    <label for="ação">Ação</label>
+                    <br>
+                </div>
+            </fieldset>
+        </fieldset>
+    </form>
+    <form action="" method="post">
+        <fieldset>
+            <legend>informações do usuário</legend>
+            <div>
+                <label for="cor">Cor</label>
+                <input type="color" name="cor" id="cor" value="#ffffff">
+                <br>
+                <label for="foto">Foto de Perfil</label>
+                <input type="file" name="foto" id="foto">
+                <br>
+                <label for="satis">Nível de Satisfação</label>
+                <input type="range" name="satis" id="satis" min="1" max="5">
+            </div>
         </fieldset>
     </form>
 </body>
