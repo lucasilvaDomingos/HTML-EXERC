@@ -50,7 +50,7 @@
     <form action="">
         <fieldset>
             <legend>Dados sobre Video Game</legend>
-            <fieldset>
+            <div>
                 <legend>Seus jogos Favoritos</legend>
                 <div id="marcação">
                     <input type="checkbox" name="Hades" id="Hades"><label for="Hades">Hades</label>
@@ -88,8 +88,7 @@
                 </div>
             </fieldset>
         </fieldset>
-    </form>
-    <form action="" method="post">
+    <div action="" method="post">
         <fieldset>
             <legend>informações do usuário</legend>
             <div>
@@ -103,6 +102,42 @@
                 <input type="range" name="satis" id="satis" min="1" max="5">
             </div>
         </fieldset>
+    <br>
+    <div action="">
+        <label for="teste2">Seu Bairro:</label>
+        <input type="text" name="teste2" id="teste2" list="bairros">
+        <datalist id="bairros"> <!-- possui esse id para relacionar com o input, basicamente o que o 'name' faz -->
+            <option value="Payol 1"></option>
+            <option value="Payol 2"></option>
+            <option value="Green Hills"></option>
+            <option value="Alaide"></option>
+            <option value="Centro"></option>
+        </datalist>
+    </div>
+    <br>
+    <div action="">
+        <label for="teste">Cores:</label>
+        <select name="teste" id="teste">
+            <optgroup label="Cores Primárias"><!-- esse label funciona como um paramêtro -->
+                <option value="azul">Azul</option>
+                <option value="verm">Vermelho</option>
+                <option value="amare">Amarelo</option>
+            </optgroup>
+            
+            <optgroup label="Cores Secundárias"><
+                <option value="verde" selected>Verde</option>
+                <option value="laran">Laranja</option>
+                <option value="roxo">roxo</option>
+            </optgroup>
+        </select>
+    </div>    
+    <div>
+        <label for="coment">Faça um comentário:</label>
+        <br>
+        <textarea name="coment" id="coment" cols="30" rows="10" required minlength="5" maxlength="50">
+
+        </textarea>
+    </div>
     </form>
 </body>
 </html>
