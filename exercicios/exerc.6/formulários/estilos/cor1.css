@@ -1,15 +1,51 @@
 @charset "UTF-8";
+html body{
+}
 form{
-    background-color: rgb(36, 36, 208);
-    height: 50em;
-    width: 50em;
-    padding: 1em;
+    min-width: 400px;
+    background-color: #080887;
+    height: 135vh;
+    width: 45vw;
+    padding: 1em 1.8em 3em 1.3em;
+    border-radius: 10px;
+    margin: auto;
+}
+h1{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em; 
+    text-align: center;
+    margin: 0.6em 0em;
+}
+h2{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:1.4em;
+    text-align: center;
+    margin: 0em 2em 1em 2em;
 }
 label{
-
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    display: inline;
+}
+legend{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
 }
 input{
-width: 100%;
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 8px;
+    border: none;
+}
+input:focus{
+    outline: 4px solid #566dee;
+    transition-duration:0.1s;
+    border: none;
 }
 fieldset{
     border: none;
@@ -18,4 +54,27 @@ fieldset{
 }
 select{
     display: inline;
+    height: 2.5em;
+    border-radius: 8px;
+    border: none;
+}
+span{
+    font-size: 1.5em;
+    color: rgb(200, 0, 0);
+}
+#comit{
+    display: block;
+    width: 100%;
+    height: 2.5em;
+    border-radius: 8px;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+#aviso{
+    font-size: 0.9em;
+    color: aliceblue;
+    margin: 1em 0em 0em 0em;
+    text-align: left;
 }

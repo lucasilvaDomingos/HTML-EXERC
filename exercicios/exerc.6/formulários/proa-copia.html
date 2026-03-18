@@ -8,24 +8,26 @@
 </head>
 <body>
     <form action="exemplo.php">
+        <h1>Processo Seletivo</h1>
+        <h2>Você está na etapa de inscrição do PROPROFISSÃO. Complete seu cadastro e avance nas 3 etapas para garantir sua candidatura.</h2>
         <div>
-            <label for="nome">Nome *</label>
+            <label for="nome">Nome <span >*</span></label>
             <br>
             <input type="text" name="nome" id="nome">
             <br>
-            <label for="sobrenome">Sobrenome *</label>
+            <label for="sobrenome">Sobrenome <span >*</span></label>
             <br>
             <input type="text" name="sobrenome" id="sobrenome">
         </div>
         <br>
         <div>
-            <label for="email">Endereço de e-mail *</label>label>
+            <label for="email">Endereço de e-mail <span >*</span><label>
                 <br>
             <input type="email" name="email" id="email">
         </div>
             <br>
             <div>
-                <label for="senha">Senha *</label>
+                <label for="senha">Senha <span >*</span></label>
                 <br>
                 <input type="password" name="senha" id="senha">
             </div>
@@ -34,13 +36,13 @@
             <div>
                 <legend>Cadastro</legend>
                 <br>
-                <label for="whast">WhatsApp *</label>
+                <label for="whast">WhatsApp <span >*</span></label>
                 <br>
                 <input type="tel" name="whast" id="whast">
             </div>
             <br>
             <div>
-                <label for="estado">UF *</label>
+                <label for="estado">UF <span >*</span></label>
                 <br>
                 <input type="text" name="estado" id="estado" list="estados">
                 <datalist id="estados">
@@ -49,7 +51,7 @@
             </div>
             <br>
             <div>
-                <label for="cpf">CPF *</label>
+                <label for="cpf">CPF <span >*</span></label>
                 <br>
                 <input type="number" name="cpf" id="cpf">
             </div>
@@ -93,7 +95,6 @@
                     </optgroup>
                     </select>
                 <label for="mes"></label>
-                <br>
                 <select name="mes" id="mes">
                     <optgroup>
                         <option value="Janeiro">Janeiro</option>
@@ -111,7 +112,6 @@
                     </optgroup>
                 </select>
                 <label for="ano"></label>
-                <br>
                 <select name="ano" id="ano">
                     <optgroup>
                         <option value="2000">2000</option>
@@ -131,6 +131,11 @@
                 </select>
             </div>
         </fieldset>
+        <br>
+        <hr>
+        <br>
+        <input type="submit" value="Iniciar candidatura" id="comit">
+        <h2 id="aviso"><span>*</span> Campos Obrigatórios</h2>
     </form>
 </body>
 </html>
