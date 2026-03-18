@@ -16,7 +16,7 @@
             <br>
             <div>
                 <label for="iNome"><strong>Nome:</strong></label>
-            <input type="text" name="Nome" id="iNome" required placeholder="Nome" minlength="3" maxlength="15" autocomplete="name" >
+            <input type="text" name="Nome" id="iNome" size="10" required placeholder="Nome" minlength="3" maxlength="15" autocomplete="name" >
             </div>
             <br>
             <div>
@@ -99,10 +99,16 @@
                 <input type="file" name="foto" id="foto">
                 <br>
                 <label for="satis">Nível de Satisfação</label>
-                <input type="range" name="satis" id="satis" min="1" max="5">
+                <input type="range" name="satis" id="satis" min="1" max="5" oninput="valor.innerHTML = Number(satis.value)">
+                <output id="valor">3</output>
+                <br>
+                <label for="numb">Idade:</label>
+                <input type="number" name="numb" id="numb" required min="18" value="18">
             </div>
         </fieldset>
     <br>
+    <fieldset>
+        <legend>Testes</legend>
     <div action="">
         <label for="teste2">Seu Bairro:</label>
         <input type="text" name="teste2" id="teste2" list="bairros">
@@ -135,8 +141,19 @@
         <label for="coment">Faça um comentário:</label>
         <br>
         <textarea name="coment" id="coment" cols="30" rows="10" required minlength="5" maxlength="50">
-
         </textarea>
+        <br>
+        <label for="num1">Número 1:</label>
+        <input type="number" name="num1" id="num1" oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+        <br>
+        <br>
+        <label for="num2">Número 2:</label>
+        <input type="number" name="num2" id="num2" oninput="soma.innerHTML = Number(num1.value) + Number(num2.value)">
+        <br>
+        <br>
+        <label for="soma">soma:</label>
+        <output name="soma" id="soma">0</output>
+        </fieldset>
     </div>
     </form>
 </body>
