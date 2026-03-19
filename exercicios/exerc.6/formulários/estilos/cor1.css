@@ -4,8 +4,8 @@ html body{
 form{
     min-width: 400px;
     background-color: #080887;
-    height: 135vh;
-    width: 45vw;
+    height: 60em;
+    width: 40em;
     padding: 1em 1.8em 3em 1.3em;
     border-radius: 10px;
     margin: auto;

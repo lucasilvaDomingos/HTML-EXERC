@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* typical device breackpoints
+    mobile:480px á 600px
+    tablet:600px á 768px
+    desktop:768px á 992px
+    large screen:992px á 1200px
+ */
+@media all{
+     *{
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+        }
+#tela2{
+    display: none;
+}
+#tela3{
+    display: none;
+}
+#tela4{
+    display: none;
+}
+#tela5{
+    display: none;
+}
+    }
+    html,body{
+        width: 100vw;
+        height: 100vh;
+    }
+    body{
+    background:#23242c url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+}
+main{
+    background-color: rgba(240, 255, 255, 0.836);
+    border-radius: 5px;
+    color: black;
+    text-align: center;
+    width: 450px;
+    margin: auto;
+}
+img{
+    margin-bottom: 1em;
+    margin: auto;
+}
+@media screen and (min-width:768px) and (max-width:992px){
+    #tela2{
+        display: block;
+    }
+    #tela1{
+        display: none;
+    }
+    body{
+        background-image:url(../imagens/back-tablet.jpg)
+    }
+    main{
+        width: 600px;
+    }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+    #tela3{
+        display: block;
+    }   
+    #tela1{
+        display: none;
+    }
+    body{
+        background-image:url(../imagens/back-pc.jpg)
+    }
+    main{
+        width: 800px;
+    }
+}
+@media screen and (min-width:1200px){
+    #tela4{
+        display: block;
+    }
+    #tela1{
+        display: none;
+    }
+    body{
+        background-image:url(../imagens/back-tv.jpg)
+    }
+    main{
+        width: 1000px;
+    }
+}
+@media print{
+    #tela5{
+        display: block;
+    }
+    #tela1{
+        display: none;
+    }
+    /* Imagens de fundo não funcionam para a impressão */
+}
