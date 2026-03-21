@@ -29,7 +29,7 @@
         height: 100vh;
     }
     body{
-    background:#23242c url(../imagens/back-phone.jpg) no-repeat;
+    background:#23242c url(../imagens/back-phone.jpg) no-repeat center center;
     background-size: cover;
 }
 main{
