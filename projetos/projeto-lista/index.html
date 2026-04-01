@@ -190,7 +190,6 @@
         <h2 class="css">Flexible-box</h2>
         <ul class="list-css">
             <li><strong>flex:</strong>É o display que faz com que as caixas de adaptem melhor ao container</li>
-            <li><strong>flex-auto:</strong>É utilizado nos itens para obedecer as alterações e ficarem flexissíveis </li>
             <li><strong>flex-direction:</strong>Serve para definir a direção dos itens no container</li>
             <li><strong>row e column:</strong>São as direções possiveis no flex-direction, elas possuem a versão reverse junto tmb</li>
             <li><strong>main-axis:</strong>É o eixo principal do container, ele tem um main-start e main end, o start começa da onde o eixo se inicia</li>
@@ -200,16 +199,24 @@
             <li><strong>wrap:</strong>Faz com que as quebras sigam o fluxo da cross-axis</li>
             <li><strong>wrap-reverse:</strong>Faz a quebra no sentido contrário o que seria o padrão</li>
             <li><strong>flex-flow:</strong>É uma Shorthand para o flex-direction + flex-wrap, nessa ordem</li>
-            <li><strong>justify-content:</strong>Serve para alinhar o e ajeitar os espaços dos itens através do main-axis</li>
-            <li><strong>align-content:</strong>Ele tem as mesma propriedades do justify-content, mas a diferença é que ele altera o espaços e alinhamentos do cross-axis quando se cria espaços no container, quando se á quebra</li>
+            <li><strong>justify-content:</strong>Serve para alinhar e ajeitar os espaços dos itens através do main-axis</li>
+            <li><strong>align-items:</strong>Serve para alterar o alinhamento na direção do cross-axis</li><!-- é bem parecido com o align-content, mas o align-content só altera quando á quebra -->
+            <li><strong>align-content:</strong>Ele tem as mesma propriedades do align-content, mas a diferença é que ele altera o espaços e alinhamentos do cross-axis quando se cria espaços no container, quando se á quebra</li>
             <li><strong>flex-start e end:</strong>Define onde o conteudo vai se iniciar dentro do container, utilizando como base o main-start e end, e tmb tem o center que centraliza os itens por igual no meio</li>
             <li><strong>space-between:</strong>Faz com que o primeiro e o ultimo item se iniciem no main sart e end,um em cada um, e os itens do meio se alinhem igualmente</li>
             <li><strong>space-evenly:</strong>Separa igualmente cada item com base em um calculo de espaço criado no container</li>
             <li><strong>space-around:</strong>Cria 3 espaços dentro do container, e dentro deles centraliza os itens </li>
-            <li><strong>align-items:</strong>Serve para alterar o alinhamento na direção do cross-axis</li><!-- é bem parecido com o align-content, mas o align-content só altera quando á quebra -->
             <li><strong>stretch:</strong>Serve para esticar os itens para o tamanho da tela</li>
             <li><strong>order:</strong>Aplica numeros para criar uma ordem numérica entre os itens</li>
             <li><strong>align-self:</strong>Serve para definir o alinhamento cross-axis dos itens</li>
+            <li><strong>flex-basis:</strong>Serve para definir um tamnho para os itens, por padrão eles aumentam com base no conteudo dentro dos itens</li>
+            <li><strong>flex-grow:</strong>Define o crescimento dos itens quando o container aumenta</li>
+            <li><strong>flex-shrink</strong>Define a diminuição dos itens quando o container diminui</li>
+            <li><strong>valores do flex-grow e shrink</strong>0 não altera nada nas duas formas, o 1 aumenta um quantidade expecifica e acima disso vai multiplicando o tamanho/li><!-- se dois itens tiverem o mesmo valor eles terão o mesmo tamanho -->
+            <li><strong>flex:</strong>É uma Shorthand para as seguintes propriedades: "flex-grow+ flex-shrink+flex-basis" nessa ordem</li>
+            <li><strong>initial:</strong>É um valor do flex para definir diretamente essa configuração: "0 1 auto" que vai deixar flexivel apenas para quando for diminuido</li>
+            <li><strong>none:</strong>É um valor do flex para definir diretamente essa configuração: "0 0 auto" que vai deixar o item sem flexibilidade nenhuma</li>
+            <li><strong>auto:</strong>É um valor do flex para definir diretamente essa configuração: "1 1 auto" que vai deixar o mais flexivel possivel</li>
         </ul>
         <h2 class="css">Propriedades-css</h2>
         <ul class="list-css" class="css-main">
