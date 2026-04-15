@@ -7,20 +7,38 @@
     <style>
         .container{
             display: grid;
-            grid-template: 150px 150px/auto auto auto;
+            grid-template: 1fr repeat(2, 50px) 1fr/repeat(2, 1fr);
             place-items: stretch stretch;
             place-content: space-between normal;
             /* justify-content: end; se usar essa propriedade o stretch do justify-items quebra*/
-            grid-auto-rows: 150px;
+            grid-auto-rows: 1fr;
             height: 500px;
             border: 2px dashed green;
+        }
+        .cont{
+            display: grid;
+            height: 500px;
+            border: 2px dashed green;
+            grid-template: repeat(4, 100px)/repeat(3, 1fr);
+            grid-auto-rows: 150px;
         }
         .item{
             border: 2px dashed red;
             text-align: center;
-
         }
-
+        .num{
+            border: 2px dashed red;
+            text-align: center;
+        }
+        #um{
+            grid-area: 1/1/2/4;
+        }
+        #cinco{
+            grid-area: 3/1/5/2 ;
+        }
+        #seis{
+            grid-area: 3/2/5/4;
+        }
     </style>
 </head>
 <body>
@@ -34,7 +52,15 @@
             <div class="item">F</div>
             <div class="item">G</div>
             <div class="item">H</div>
-
+        </div>
+        <br>
+        <div class="cont">
+            <div id="um" class="num">A</div>
+            <div id="dois" class="num">B</div>
+            <div id="tres" class="num">C</div>
+            <div id="quatro" class="num">D</div>
+            <div id="cinco" class="num">E</div>
+            <div id="seis" class="num">F</div>
         </div>
     </main>
 </body>
